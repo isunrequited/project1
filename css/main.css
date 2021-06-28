@@ -19,7 +19,6 @@ input {
 
 .wrap {
     font: 14px "Noto Sans KR"sans-serif;
-    height: 3000px;
 }
 
 /* 영어폰트에는 따로 클래스 적용해서 */
@@ -72,15 +71,14 @@ header .inner-header .login-nav li {
     margin-left: 10px;
 }
 
+/* section contents */
 section.contents {
     background: #1b1b1b;
-    display: flex;
-    flex-flow: wrap;
 }
 
+/* section main */
 section.contents .main {
-    width: 80%;
-    height: 1000px;
+    height: 800px;
     overflow: hidden;
     position: relative;
 }
@@ -91,26 +89,40 @@ section.contents .main img {
 
 section.contents .main .title {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 20px;
+    top: 100px;
+    width: 400px;
 }
 
+/* section lanking */
 section.contents aside.lanking {
     width: 20%;
     background: green;
     position: fixed;
     right: 0;
+    top: 200px;
 }
 
+/* section poster */
 section.contents .posters {
     width: 80%;
-    background: yellow;
+    /* background: yellow; */
+    top: 50%;
 }
 
 section.contents .posters ul {
     display: grid;
     grid-template-rows: repeat(4, 300px);
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
     justify-items: center;
     align-items: center;
+}
+
+section.contents .posters ul li .movie-poster {
+    
+}
+
+section.contents .posters ul li .movie-poster img {
+    width: 100%;
 }
