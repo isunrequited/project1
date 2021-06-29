@@ -101,7 +101,9 @@ section.contents {
         rgba(34,34,34, 1) 75%,
         rgba(34,34,34, 1)
       ),
-      url("../img/balsin.jpg");
+      url("../img/balsin.jpg") no-repeat;
+    background-position-y: -170px;
+    background-size: cover;
     padding-bottom: 50px;
     color: #fff;
 }
